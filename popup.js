@@ -1,1 +1,3 @@
-alert("popup-script");
+chrome.runtime.sendMessage({ method: "getDomain" }, function (response) {
+    alert(response);
+});

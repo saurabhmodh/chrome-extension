@@ -1,1 +1,1 @@
-alert("user-page-script");
+chrome.runtime.sendMessage({ method: "setDomain", domain: document.domain });
